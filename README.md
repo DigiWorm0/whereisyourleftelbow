@@ -1,2 +1,3 @@
-# whereisyourleftelbow
-Did you forget where your left elbow is? No? Well too bad, heres an AI that will help you find it...
+---
+permalink: /index.html
+---
