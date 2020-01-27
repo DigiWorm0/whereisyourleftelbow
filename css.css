@@ -1,0 +1,37 @@
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+    font-family: 'Alatsi', sans-serif;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+#title
+{
+    font-size: 50px;
+    padding-top: 10px;
+    padding-left: 30px;
+    color: #fff;
+}
+#header
+{
+	background-color: #353535;
+	width: 100%;
+	height: 100px;
+	padding: 10px;
+	display:block;
+}
+#left
+{
+	padding-top: 10px;
+    padding-left:30px;
+	width: 300px;
+	float: left;
+}
+canvas
+{
+	display: block;
+	margin: auto;
+}
