@@ -28,10 +28,11 @@ function gotResults(data)
 
 function setup()
 {
-    createCanvas(640,550);
+    var canvas = createCanvas(640,550);
+	canvas.parent("main");
     video = createCapture(VIDEO);
 	video.hide();
-    finger = loadImage('finger.png');
+    finger = loadImage('./external/finger.png');
     mobilenet = ml5.poseNet(video, modelReady);
 }
 
