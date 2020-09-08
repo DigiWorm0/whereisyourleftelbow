@@ -32,7 +32,7 @@ function setup()
 	canvas.parent("main");
     video = createCapture(VIDEO);
 	video.hide();
-    finger = loadImage('./external/finger.png');
+    finger = loadImage('./external/finger.jpg');
     mobilenet = ml5.poseNet(video, modelReady);
 }
 
