@@ -18,7 +18,6 @@ function modelReady()
 
 function gotResults(data)
 {
-    console.log(data);
 	if (data[0])
 	{
 		pose = data[0].pose;
@@ -29,10 +28,10 @@ function gotResults(data)
 function setup()
 {
     var canvas = createCanvas(640,550);
-	canvas.parent("main");
+	canvas.parent("canvasContainer");
     video = createCapture(VIDEO);
 	video.hide();
-    finger = loadImage('./external/finger.jpg');
+    finger = loadImage('https://thumbs.dreamstime.com/z/hand-pointer-hands-pointing-finger-icon-isolated-white-75633117.jpg');
     mobilenet = ml5.poseNet(video, modelReady);
 }
 
@@ -45,10 +44,15 @@ function draw()
         textSize(30);
         text('Loading...', 10, 100);
         textSize(15);
-        text('Allow the camera to inspect your left elbow', 10, 200);
+        text('Allow the camera to unleash the true', 10, 200);
+		text('potential of our super elbow tracker 9000.', 10, 220);
     }
     else
+	{
+		translate(640, 0);
+		scale(-1.0,1.0);
         image(video,0,0);
+	}
 	if (pose)
 	{
 		image(finger, pose.leftElbow.x - (size / 2), pose.leftElbow.y - (size / 2), size, size);

@@ -10,33 +10,100 @@
     <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="./external/css.css">
     <script src="./external/sketch.js"></script>
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179255023-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-179255023-1');
+	</script>
+
     </head>
     <body>
-	<nav class="navbar navbar-dark bg-dark fized-top">
-		<h1 id="title">Where is your left elbow?</h1>
+	<nav class="jumbotron">
+		<h1 class="title">Where is your left elbow?</h1>
+		<h4 class="title">A simple AI that can locate your left elbow.</h4>
 	</nav>
-	<main class="container" role="main" style="float:left;" id="main">
-		<div id="left">
-			<h2>Elbow Facts</h2>
-			<ul>
-				<li>In Latin, the elbow is articulatio cubiti.</li>
-				<li>Most people have two elbows.</li>
-				<li>Elbow scars look like bubblegum.</li>
-				<li>The peak of your elbow is the “olecranon”.</li>
-				<li>The elbow has twenty-three muscles.</li>
-				<li>The elbow connects the radius, ulna, and humerus.</li>
-				<li>Double-jointed people can bend their elbow backward at a 270° angle.</li>
-				<!--<li>The skin on the outside of your elbow is called your “wenis”. The skin on the inside of your elbow is your “wagina”.</li>-->
-				<li>Similar to your knee, the elbow has a bone covering where the humerus, ulna, and radius meet called the elbow-cap.</li>
-				<!--<li>You can actually tickle your funny bone by rubbing your elbow against any wet surface.</li>-->
-				<li>There are 10,000 elbows on a mosquito.</li>
-				<li>Ancient civilizations would collect the elbows of their enemies and string them on a necklace as a symbol of their power. </li>
-				<li>Most primates have an elbow or two.</li>
-				<li>Eric is an elbow</li>
-				<li>Burger king elbow lettuce</li>
-				<li>2</li>
-
-			</ul>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12 offset-1">
+				<h2>Instructions For Use...</h2>
+				<ol>
+					<li>Get a webcam you fucking introvert</li>
+					<li>Click that 'allow' button and let us see your beautiful face.</li>
+					<li>Watch as our 1000iq big brain code triangulated the exact location of your left elbow in real time.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-5 offset-1">
+				<h2>Some Elbow Facts...</h2>
+				<ul>
+					<li>In Latin, the elbow is articulatio cubiti.</li>
+					<li>Most people have two elbows.</li>
+					<li>Elbow scars look like bubblegum.</li>
+					<li>The peak of your elbow is the “olecranon”.</li>
+					<li>The elbow has twenty-three muscles.</li>
+					<li>The elbow connects the radius, ulna, and humerus.</li>
+					<li>Double-jointed people can bend their elbow backward at a 270° angle.</li>
+					<!--<li>The skin on the outside of your elbow is called your “wenis”. The skin on the inside of your elbow is your “wagina”.</li>-->
+					<li>Similar to your knee, the elbow has a bone covering where the humerus, ulna, and radius meet called the elbow-cap.</li>
+					<!--<li>You can actually tickle your funny bone by rubbing your elbow against any wet surface.</li>-->
+					<li>There are 10,000 elbows on a mosquito.</li>
+					<li>Ancient civilizations would collect the elbows of their enemies and string them on a necklace as a symbol of their power. </li>
+					<li>Most primates have an elbow or two.</li>
+					<li>Eric is an elbow</li>
+					<li>Burger king elbow lettuce</li>
+					<li>2</li>
+				</ul>
+			</div>
+			<div class="col-sm-5" id="canvasContainer">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-5 offset-1">
+				<h2>Faq</h2>
+				<div class="accordion">
+					<div class="card">
+						<div class="card-header">
+							<h2>
+								<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#c1" aria-expanded="true" aria-controls="c1">
+									But why though?
+								</button>
+							</h2>
+						</div>
+					</div>
+					<div class="collapse" id="c1">
+						<div class="card-body">
+							Have you ever forgotten where your left elbow was? Of course you haven't, your not fucking stupid. But if you are ever having a stroke or a weird case of amnesia, here ya go.
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header">
+							<h2>
+								<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#c2" aria-expanded="true" aria-controls="c1">
+									How did you train an AI to track left elbows?
+								</button>
+							</h2>
+						</div>
+					</div>
+					<div class="collapse" id="c2">
+						<div class="card-body">
+							Imagine going through the effort of training an AI to track elbows. I actually just used <a href="https://learn.ml5js.org/docs/#/reference/posenet">PoseNet in ml5</a> then only plotted the left elbow like a sane person.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-10 offset-1">
+				<hr />
+				<p>Copyright &copy 2020 - Austin Kugler</p>
+				<p><a href="https://github.com/DigWorm0/whereisyourleftelbow">GitHub</a> | <a href="#" onclick="alert('No. What the fuck is wrong with you.');return false;">Facebook</a></p>
+			</div>
 		</div>
 	</main>
     </body>

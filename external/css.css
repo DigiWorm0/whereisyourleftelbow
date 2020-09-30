@@ -8,9 +8,9 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
-#title
+.title
 {
-    color: #fff;
+    text-align:center;
 }
 #header
 {
@@ -19,13 +19,6 @@ html, body {
 	height: 100px;
 	padding: 10px;
 	display:block;
-}
-#left
-{
-	padding-top: 10px;
-    padding-left:30px;
-	width: 300px;
-	float: left;
 }
 canvas
 {
