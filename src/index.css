@@ -1,0 +1,44 @@
+/*  Container  */
+* {
+    transition-property: background-color, color, filter;
+    transition-duration: 0.5s;
+}
+
+html, body {
+    margin: 0;
+    font-family: 'Comic Sans MS', sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container-stretch {
+    min-height: calc(100vh - 309px);
+}
+
+.h-100 {
+    height: 100px !important;
+}
+
+/*  Background / Text Color Codes  */
+.bg-gray {
+    background-color: #eeeeee !important;
+}
+.bg-black {
+    background-color: #1c1c1c !important;
+}
+.bg-blue {
+    background-color: #009cde !important;
+}
+.txt-blue {
+    color: #009cde !important;
+    font-weight: 700;
+}
+.txt-red {
+    color: #d82929 !important;
+    font-weight: 700;
+}
+.txt-green {
+    color: #2caf3d !important;
+    font-weight: 700;
+}
