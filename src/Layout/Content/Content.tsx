@@ -21,8 +21,6 @@ class Content extends React.Component
                         <ElbowTracker />
                     </div>
                 </div>
-
-                <Footer />
             </div>
         )
     }
